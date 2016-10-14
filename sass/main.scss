@@ -1,7 +1,18 @@
 @import 'global/reset';
 
 body{
-    .main_content{
-        
+    div.main_content{
+        width:100%;
+        div#globe_container{
+            width:50%;
+            margin-left:0;
+            margin-right:auto;
+        }
+        div#not_globe{
+            text-align:center;
+            width:50%;
+            margin-left:auto;
+            margin-right:0;
+        }
     }
 }
