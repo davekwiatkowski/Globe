@@ -20,24 +20,26 @@
 
 	<!--style-->
 	<link rel="stylesheet" href="css/main.css" />
-
-	<!--scripts-->
 </head>
 
 <body>
+	<div class="main_content">
+		<div id="globe_container"></div>
 
-	<div id="container"></div>
+		<div id="not_globe">
+      <h1>Years</h1>
+			<div id="curresntInfo">
+				<span id="year1990" class="year">1990</span>
+				<span id="year1995" class="year">1995</span>
+				<span id="year2000" class="year">2000</span>
+			</div>
+		</div>
 
-	<div id="currentInfo">
-		<span id="year1990" class="year">1990</span>
-		<span id="year1995" class="year">1995</span>
-		<span id="year2000" class="year">2000</span>
+		<script type="text/javascript" src="third-party/Three/Detector.js"></script>
+		<script type="text/javascript" src="third-party/Three/three.min.js"></script>
+		<script type="text/javascript" src="third-party/Three/Tween.js"></script>
+		<script type="text/javascript" src="js/globe.js"></script>
+		<script type="text/javascript" src="js/globe_setup.js"></script>
 	</div>
-
-	<script type="text/javascript" src="third-party/Three/Detector.js"></script>
-	<script type="text/javascript" src="third-party/Three/three.min.js"></script>
-	<script type="text/javascript" src="third-party/Three/Tween.js"></script>
-	<script type="text/javascript" src="js/globe.js"></script>
-	<script type="text/javascript" src="js/globe_setup.js"></script>
 
 </html>
