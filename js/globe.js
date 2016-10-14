@@ -88,7 +88,7 @@ DAT.Globe = function(container, opts) {
 
     var geometry = new THREE.SphereGeometry(200, 40, 30);
 
-    shader = Shaders['earth'];
+    shader = Shaders['atmosphere'];
     uniforms = THREE.UniformsUtils.clone(shader.uniforms);
 
     uniforms['texture'].value = THREE.ImageUtils.loadTexture(imgDir+'world.jpg');
