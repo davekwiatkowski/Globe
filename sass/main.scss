@@ -19,7 +19,7 @@ body{
             div#selection{
                 > h1{
                     font-size: $font-medium;
-                    color: $microsoft-green;
+                    color: $microsoft-orange;
                 }
                 div#current_info{
                     @include flex_left_column;
