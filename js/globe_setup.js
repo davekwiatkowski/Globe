@@ -31,7 +31,7 @@ else {
   // add the event listeners for the mode elements
   for (var i = 0; i < modes.length; i++) {
     var modeToChange = document.getElementById('mode_' + modes[i]);
-    modeToChange.addEventListener('mouseover', setMode(globe, i), false);
+    modeToChange.addEventListener('click', setMode(globe, i), false);
   }
 
   TWEEN.start();

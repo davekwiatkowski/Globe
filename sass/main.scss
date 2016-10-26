@@ -4,42 +4,66 @@
 
 body{
     div.main_content{
-        width:100%;
-        div#globe_container{
-            width:70%;
-            margin-left:0;
-            margin-right:auto;
-        }
-        div#not_globe{
-            height:100vh;
-            width:30%;
-            margin-left:auto;
-            margin-right:0;
+        section.splash{
             @include flex_center_column;
-            div#selection{
-                > h1{
-                    font-size: $font-medium;
-                    color: $microsoft-orange;
+            width:100%;
+            height:90vh;
+            div.splash_contents{
+                h1{
+                    font-size: $font-huge;
                 }
-                div#current_info{
-                    @include flex_left_column;
-                    :before{
-                        content: '-';
-                    }
-                    :hover:before{
-                        content: '----';
-                    }
-                    > *{ 
-                        font-size: $font-small;
-                        width:100%;
-                    }
-                    > .active{
-                        font-style: italic;
-                        color: $microsoft-blue;
-                    }
+                h2{
+                    font-size: $font-small;
                 }
                 margin:auto;
-                width:100%;
+            }
+        }
+        width:100%;
+        height:100vh;
+        section.globe{
+            height:100vh;
+            width:100%;
+            color:#fff;
+            div#globe_container{
+                margin-right:20rem;
+            }
+            div#not_globe{
+                background:#000;
+                height:100vh;
+                width:20rem;
+                margin-left:auto;
+                margin-right:0;
+                @include flex_center_column;
+                div#selection{
+                    > h1{
+                        font-size: $font-medium;
+                        color: $microsoft-orange;
+                    }
+                    div#current_info{
+                        @include flex_left_column;
+                        :before{
+                            content: '-';
+                            color:$microsoft-green;
+                        }
+                        :hover{
+                            cursor:pointer;
+                        }
+                        :hover:before{
+                            content: '----';
+                        }
+                        > *{ 
+                            font-size: $font-small;
+                            margin-right:auto;
+                            color:#fff;
+                        }
+                        > .active{
+                            font-style: italic;
+                            color: $microsoft-blue;
+                        }
+                    }
+                    margin:auto;
+                    width:100%;
+                }
             }
         }
     }
