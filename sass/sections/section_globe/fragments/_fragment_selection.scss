@@ -1,5 +1,4 @@
 @import './fragment_current_info';
-
 @mixin fragment_selection{
     div#selection{
         @include fragment_current_info;

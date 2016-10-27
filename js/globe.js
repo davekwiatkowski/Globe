@@ -31,7 +31,7 @@ DAT.Globe = function (container, opts) {
         'void main() {',
         'vec3 diffuse = texture2D( texture, vUv ).xyz;',
         'float intensity = 1.05 - dot( vNormal, vec3( 0.0, 0.0, 1.0 ) );',
-        'vec3 atmosphere = vec3( 1.0, 1.0, 1.0 ) * pow( intensity, 3.0 );',
+        'vec3 atmosphere = vec3( 1.0, 1.0, 1.0 ) * pow( intensity, 8.0 );',
         'gl_FragColor = vec4( diffuse + atmosphere, 1.0 );',
         '}'
       ].join('\n')
@@ -49,7 +49,7 @@ DAT.Globe = function (container, opts) {
         'varying vec3 vNormal;',
         'void main() {',
         'float intensity = pow( 0.8 - dot( vNormal, vec3( 0, 0, 1.0 ) ), 12.0 );',
-        'gl_FragColor = vec4( 1.0, 1.0, 1.0, 1.0 ) * intensity;',
+        'gl_FragColor = vec4( 0.0, 0.0, 0.0, 0.0 ) * intensity;',
         '}'
       ].join('\n')
     }
@@ -73,9 +73,6 @@ DAT.Globe = function (container, opts) {
   var PI_HALF = Math.PI / 2;
 
   function init() {
-    container.style.color = '#fff';
-    container.style.font = '13px/20px Arial, sans-serif';
-
     var shader, uniforms, material;
     w = container.offsetWidth || window.innerWidth;
     h = container.offsetHeight || window.innerHeight;
@@ -85,7 +82,7 @@ DAT.Globe = function (container, opts) {
 
     scene = new THREE.Scene();
 
-    var geometry = new THREE.SphereGeometry(200, 40, 30);
+    var geometry = new THREE.SphereGeometry(125, 40, 30);
 
     shader = Shaders['earth'];
     uniforms = THREE.UniformsUtils.clone(shader.uniforms);
@@ -117,7 +114,7 @@ DAT.Globe = function (container, opts) {
     });
 
     mesh = new THREE.Mesh(geometry, material);
-    mesh.scale.set(1.1, 1.1, 1.1);
+    mesh.scale.set(2.1, 1.1, 1.1);
     scene.add(mesh);
 
     geometry = new THREE.BoxGeometry(0.75, 0.75, 1);
@@ -190,7 +187,7 @@ DAT.Globe = function (container, opts) {
       lng = data[i + 1];
       color = colorFnWrapper(data, i);
       size = data[i + 2];
-      size = size * 200;
+      size = size * 125;
       addPoint(lat, lng, size, color, subgeo);
     }
     if (opts.animated) {
@@ -225,8 +222,13 @@ DAT.Globe = function (container, opts) {
           morphTargets: true
         }));
       }
+      this.points.name = "lines";
       scene.add(this.points);
     }
+  }
+
+  function removeAllPoints() {
+    scene.remove(scene.getObjectByName("lines"));
   }
 
   function addPoint(lat, lng, size, color, subgeo) {
@@ -234,9 +236,9 @@ DAT.Globe = function (container, opts) {
     var phi = (90 - lat) * Math.PI / 180;
     var theta = (180 - lng) * Math.PI / 180;
 
-    point.position.x = 200 * Math.sin(phi) * Math.cos(theta);
-    point.position.y = 200 * Math.cos(phi);
-    point.position.z = 200 * Math.sin(phi) * Math.sin(theta);
+    point.position.x = 125 * Math.sin(phi) * Math.cos(theta);
+    point.position.y = 125 * Math.cos(phi);
+    point.position.z = 125 * Math.sin(phi) * Math.sin(theta);
 
     point.lookAt(mesh.position);
 
@@ -297,11 +299,11 @@ DAT.Globe = function (container, opts) {
   }
 
   function onMouseWheel(event) {
-    event.preventDefault();
+    /*event.preventDefault();
     if (overRenderer) {
       zoom(event.wheelDeltaY * 0.3);
     }
-    return false;
+    return false;*/
   }
 
   function onDocumentKeyDown(event) {
@@ -318,9 +320,12 @@ DAT.Globe = function (container, opts) {
   }
 
   function onWindowResize(event) {
-    camera.aspect = container.offsetWidth / container.offsetHeight;
+    w = container.offsetWidth || window.innerWidth;
+    h = container.offsetHeight || window.innerHeight;
+
+    camera.aspect = w / h;
     camera.updateProjectionMatrix();
-    renderer.setSize(container.offsetWidth, container.offsetHeight);
+    renderer.setSize(w, h);
   }
 
   function zoom(delta) {
@@ -332,6 +337,8 @@ DAT.Globe = function (container, opts) {
   function animate() {
     requestAnimationFrame(animate);
     render();
+    target.x = target.x + 0.0007;
+    target.y = target.y + 0.0001;
   }
 
   function render() {
@@ -352,7 +359,6 @@ DAT.Globe = function (container, opts) {
 
   init();
   this.animate = animate;
-
 
   this.__defineGetter__('time', function () {
     return this._time || 0;
@@ -383,6 +389,7 @@ DAT.Globe = function (container, opts) {
   });
 
   this.addData = addData;
+  this.removeAllPoints = removeAllPoints; // Add this line
   this.createPoints = createPoints;
   this.renderer = renderer;
   this.scene = scene;
