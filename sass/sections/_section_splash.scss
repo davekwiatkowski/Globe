@@ -3,15 +3,21 @@
         @include flex_center_column;
         width:100%;
         height:100vh;
+
         perspective: 100vh;
         -webkit-perspective: 100vh;
         -ms-perspective: 100vh;
+        -moz-perspective: 100vh;
+
         perspective-origin: 0%;
         -ms-perspective-origin: 0%;
         -webkit-perspective-origin: 0%;
-        transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+
         -webkit-transform-style: preserve-3d;
         -ms-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
         div.splash_contents{
             padding:2rem;
             max-width: 70%;
@@ -26,10 +32,13 @@
         div.splash_panel{
             transform-origin: bottom;
             -ms-transform-origin:bottom;
+            -moz-transform-origin: bottom;
             -webkit-transform-origin: bottom;
+
             transform: rotateX(100deg);
             -ms-transform: rotateX(100deg);
             -webkit-transform: rotateX(100deg);
+            -moz-transform: rotateX(100deg);
             position:fixed;
             width:100%;
             height:100vh;
