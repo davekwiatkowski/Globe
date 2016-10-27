@@ -5,7 +5,9 @@
         height:100vh;
         perspective: 100vh;
         -webkit-perspective: 100vh;
+        -ms-perspective: 100vh;
         perspective-origin: 0%;
+        -ms-perspective-origin: 0%;
         -webkit-perspective-origin: 0%;
         div.splash_contents{
             padding:2rem;
@@ -20,8 +22,10 @@
         }
         div.splash_panel{
             transform-origin: bottom;
+            -ms-transform-origin:bottom;
             -webkit-transform-origin: bottom;
             transform: rotateX(100deg);
+            -ms-transform: rotateX(100deg);
             -webkit-transform: rotateX(100deg);
             position:fixed;
             width:100%;
