@@ -9,6 +9,9 @@
         perspective-origin: 0%;
         -ms-perspective-origin: 0%;
         -webkit-perspective-origin: 0%;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
         div.splash_contents{
             padding:2rem;
             max-width: 70%;
