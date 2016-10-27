@@ -4,10 +4,10 @@
     div#not_globe{
         //@include flex_center_column;
         @include fragment_selection;
+        > *{padding:2rem;}
         background:rgba(255, 255, 255, 0);
         height:100%;
         width:15rem;
-        left:1rem;
         top:100vh;
         position:absolute;
     }
