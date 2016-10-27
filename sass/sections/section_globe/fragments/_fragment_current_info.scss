@@ -22,5 +22,9 @@
             font-style: italic;
             color: $microsoft-blue;
         }
+        > .active:before{
+            content:'by ';
+            color: $microsoft-orange;
+        }
     }
 }
