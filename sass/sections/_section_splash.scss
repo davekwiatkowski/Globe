@@ -1,0 +1,16 @@
+@mixin section_splash{
+    section.splash{
+        @include flex_center_column;
+        width:100%;
+        height:90vh;
+        div.splash_contents{
+            h1{
+                font-size: $font-huge;
+            }
+            h2{
+                font-size: $font-small;
+            }
+            margin:auto;
+        }
+    }
+}

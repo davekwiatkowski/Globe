@@ -1,0 +1,26 @@
+@mixin fragment_current_info{
+    div#current_info{
+        @include flex_left_column;
+        *{
+            color:$white_af;
+        }
+        :before{
+            content: '-';
+            color:$microsoft-green;
+        }
+        :hover{
+            cursor:pointer;
+        }
+        :hover:before{
+            content: '----';
+        }
+        > *{ 
+            font-size: $font-small;
+            margin-right:auto;
+        }
+        > .active{
+            font-style: italic;
+            color: $microsoft-blue;
+        }
+    }
+}

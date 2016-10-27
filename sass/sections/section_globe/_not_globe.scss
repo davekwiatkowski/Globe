@@ -1,0 +1,14 @@
+@import './fragments/fragment_selection';
+
+@mixin not_globe{
+    div#not_globe{
+        @include flex_center_column;
+        @include fragment_selection;
+        background:#000;
+        height:100%;
+        width:15rem;
+        right:0;
+        top:90vh;
+        position:absolute;
+    }
+}

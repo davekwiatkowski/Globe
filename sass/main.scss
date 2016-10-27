@@ -1,70 +1,12 @@
 @import 'global/reset';
 @import 'global/positions';
 @import 'global/colors';
+@import 'sections/section_splash';
+@import 'sections/section_globe';
 
 body{
     div.main_content{
-        section.splash{
-            @include flex_center_column;
-            width:100%;
-            height:90vh;
-            div.splash_contents{
-                h1{
-                    font-size: $font-huge;
-                }
-                h2{
-                    font-size: $font-small;
-                }
-                margin:auto;
-            }
-        }
-        width:100%;
-        height:100vh;
-        section.globe{
-            height:100vh;
-            width:100%;
-            color:#fff;
-            div#globe_container{
-                margin-right:20rem;
-            }
-            div#not_globe{
-                background:#000;
-                height:100vh;
-                width:20rem;
-                margin-left:auto;
-                margin-right:0;
-                @include flex_center_column;
-                div#selection{
-                    > h1{
-                        font-size: $font-medium;
-                        color: $microsoft-orange;
-                    }
-                    div#current_info{
-                        @include flex_left_column;
-                        :before{
-                            content: '-';
-                            color:$microsoft-green;
-                        }
-                        :hover{
-                            cursor:pointer;
-                        }
-                        :hover:before{
-                            content: '----';
-                        }
-                        > *{ 
-                            font-size: $font-small;
-                            margin-right:auto;
-                            color:#fff;
-                        }
-                        > .active{
-                            font-style: italic;
-                            color: $microsoft-blue;
-                        }
-                    }
-                    margin:auto;
-                    width:100%;
-                }
-            }
-        }
+        @include section_splash;
+        @include section_globe;
     }
 }
