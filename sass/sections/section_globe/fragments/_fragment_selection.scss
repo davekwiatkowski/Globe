@@ -17,7 +17,6 @@
         * li{
             opacity:0;  
         }
-
         &:hover * li, &:focus * li{
             @for $i from 1 through 3{
                 &:nth-child(#{$i}){
