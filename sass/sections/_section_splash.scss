@@ -1,6 +1,7 @@
 @mixin section_splash{
     section.splash{
         @include flex_center_column;
+        @include size_full;
         .splash_contents{
             padding:2rem;
             margin: auto;
@@ -26,13 +27,12 @@
                 font-weight: bold;
             }
         }
-        @media only screen and (min-width: 500px) {
-            height:100%;
-            padding-top:4rem;
-            padding-bottom:4rem;
-        }
         z-index:999;
         position: relative;
         background:#fff;
+        @media all and (max-width: 370px){
+            height:100%;
+            padding-bottom:4rem;
+        }
     }
 }
