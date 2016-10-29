@@ -1,12 +1,37 @@
 @import './fragment_current_info';
+@import './fragment_menu_button';
 @mixin fragment_selection{
     div#selection{
         @include fragment_current_info;
         margin:auto;
         width:100%;
+        *{
+            font-weight: bold;
+        }
         > h1{
-            font-size: $font-medium;
-            color: $microsoft-orange;
+            @include fragment_menu_button;
+        }
+
+        * li{
+            opacity:0;
+        }
+        &:hover * li{
+            @for $i from 1 through 3{
+                &:nth-child(#{$i}){
+                    animation: appear 300ms linear $i * 300ms - 300ms forwards;
+                }
+            }
+        }
+            perspective: 1000px;
+        @keyframes appear{
+            0%{
+                opacity: 0;
+                transform: rotate(30deg) rotateY(90deg) translateX(-100px) translateY(100px);
+            }
+            100%{
+                opacity: 1;
+                transform: rotate(0deg) rotateY(0deg) translateX(0px) translateY(0px);
+            }
         }
     }
 }

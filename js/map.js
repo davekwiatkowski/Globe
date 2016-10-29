@@ -18,7 +18,7 @@ function init() {
 
 function changeData() {
     var data2 = google.visualization.arrayToDataTable([
-        ["Country", "Country", "New Users"],
+        ["Country", "Country", "% Web User Delta"],
         ["AL", "Albania", 0.016],
         ["DZ", "Algeria", 0.043],
         ["AO", "Angola", 0.057],
@@ -189,7 +189,7 @@ function changeData() {
     ]);
 
     var data3 = google.visualization.arrayToDataTable([
-        ["Country", "Country", "Life Satisfaction"],
+        ["Country", "Country", "Life Satisfaction Index"],
         ["AL", "Albania", 153.33],
         ["DZ", "Algeria", 173.33],
         ["AO", "Angola", 160],

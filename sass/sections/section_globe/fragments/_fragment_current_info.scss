@@ -1,12 +1,20 @@
 @mixin fragment_current_info{
-    div#current_info{
+    #current_info{
         @include flex_left_column;
+
         *{
-            color:$white_af;
+            width: 100%;
+            padding:0.25rem;
+            background: $white-af;
+            border:1px solid $weird-gray;
+            color:$crazy-black;
+        }
+        li{
+            list-style: none;
         }
         :before{
             content: '-';
-            color:$microsoft-green;
+            color:$microsoft-yellow;
         }
         :hover{
             cursor:pointer;

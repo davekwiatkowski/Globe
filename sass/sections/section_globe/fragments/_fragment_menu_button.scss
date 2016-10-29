@@ -1,0 +1,8 @@
+@mixin fragment_menu_button{
+    padding:0.25rem;
+    width: 100%;
+    background: $white-af;
+    border:1px solid $weird-gray;
+    font-size: $font-small;
+    color: $microsoft-orange;
+}

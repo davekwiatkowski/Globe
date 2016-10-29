@@ -1,9 +1,9 @@
 @mixin section_splash{
     section.splash{
         @include flex_center_column;
-        div.splash_contents{
+        .splash_contents{
             padding:2rem;
-            max-width: 70%;
+            margin: auto;
             h1{
                 font-size: $font-huge;
             }
@@ -13,7 +13,9 @@
             h3{
                 font-size: $font-tiny;
             }
-            margin:auto;
         }
+        z-index:999;
+        position: relative;
+        background:#fff;
     }
 }

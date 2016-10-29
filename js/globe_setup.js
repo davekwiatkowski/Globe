@@ -9,7 +9,7 @@ else {
     return function () {
       // create the globe
       new TWEEN.Tween(globe).to({ time: t / modes.length }, 500).easing(TWEEN.Easing.Cubic.EaseOut).start();
-      
+
       // get the current mode 
       var mode = document.getElementById('mode_' + modes[t]);
 
@@ -25,6 +25,8 @@ else {
 
       // set the activity of the current mode to active  
       mode.setAttribute('class', 'mode active');
+
+      document.getElementById('menu_thing').innerHTML = 'Countries by ' + mode.innerHTML;
     };
   };
 

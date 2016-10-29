@@ -1,6 +1,7 @@
 @mixin section_map{
     section.map{
         @include flex_center_column;
-        background-color:#000;
+        background-color:#fff;
+        z-index: 0;
     }
 }
