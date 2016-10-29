@@ -15,7 +15,7 @@
         * li{
             opacity:0;
         }
-        &:hover * li{
+        &:hover * li, &:active * l, , &:focus * li{
             @for $i from 1 through 3{
                 &:nth-child(#{$i}){
                     animation: appear 300ms linear $i * 300ms - 300ms forwards;
