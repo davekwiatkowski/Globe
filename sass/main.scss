@@ -3,10 +3,12 @@
 @import 'global/colors';
 @import 'sections/section_splash';
 @import 'sections/section_globe';
-
+@import 'sections/section_map';
+@import './sections/section';
 body{
     div.main_content{
         @include section_splash;
         @include section_globe;
+        @include section_map;
     }
 }

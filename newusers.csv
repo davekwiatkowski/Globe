@@ -1,0 +1,168 @@
+Country,Country,New Users (1 yr)
+AL,Albania,0.016
+DZ,Algeria,0.043
+AO,Angola,0.057
+AG,Antigua and Barbuda,0.018
+AR,Argentina,0.031
+AM,Armenia,0.026
+AU,Australia,0.017
+AT,Austria,0.003
+AZ,Azerbaijan,0.012
+BH,Bahrain,0.017
+BD,Bangladesh,0.104
+BB,Barbados,0.017
+BY,Belarus,0.009
+BE,Belgium,0.019
+BZ,Belize,0.067
+BJ,Benin,0.045
+BT,Bhutan,0.034
+BO,Bolivia,0.031
+BA,Bosnia and Herzegovina,0.002
+BW,Botswana,0.062
+BR,Brazil,0.051
+BN,Brunei,0.029
+BG,Bulgaria,0.009
+BF,Burkina Faso,0.07
+BI,Burundi,0.051
+KH,Cambodia,0.079
+CM,Cameroon,0.165
+CA,Canada,0.018
+CF,Central African Republic,0.053
+TD,Chad,0.055
+CL,Chile,0.033
+CN,China,0.022
+CO,Colombia,0.049
+KM,Comoros,0.039
+CR,Costa Rica,0.05
+CI,C™te d'Ivoire,0.143
+HR,Croatia,0.036
+CU,Cuba,0.04
+CY,Cyprus,0.02
+CZ,Czech Republic,0.032
+DK,Denmark,0.005
+DJ,Djibouti,0.04
+DM,Dominica,0.02
+DO,Dominican Republic,0.025
+EC,Ecuador,0.015
+EG,Egypt,0.033
+SV,El Salvador,0.078
+GQ,Equatorial Guinea,0.061
+ER,Eritrea,0.048
+EE,Estonia,0.022
+ET,Ethiopia,0.134
+FJ,Fiji,0.04
+FI,Finland,0.004
+FR,France,0.014
+GA,Gabon,0.039
+GE,Georgia,0.019
+DE,Germany,0.006
+GH,Ghana,0.14
+GR,Greece,0.004
+GD,Grenada,0.016
+GT,Guatemala,0.058
+GN,Guinea,0.047
+GW,Guinea-Bissau,0.041
+GY,Guyana,0.022
+HT,Haiti,0.03
+HN,Honduras,0.05
+HK,Hong Kong,0.006
+HU,Hungary,0.012
+IS,Iceland,0.009
+IN,India,0.305
+ID,Indonesia,0.065
+IR,Iran,0.077
+IE,Ireland,0.01
+IL,Israel,0.021
+IT,Italy,0.017
+JM,Jamaica,0.025
+JP,Japan,0.001
+JO,Jordan,0.032
+KZ,Kazakhstan,0.018
+KE,Kenya,0.037
+KW,Kuwait,0.034
+KG,Kyrgyzstan,0.075
+LA,Laos,0.047
+LV,Latvia,0
+LB,Lebanon,0.032
+LS,Lesotho,0.181
+LY,Libya,0.099
+LT,Lithuania,0.011
+LU,Luxembourg,0.019
+MG,Madagascar,0.073
+MW,Malawi,0.067
+MY,Malaysia,0.022
+MV,Maldives,0.043
+ML,Mali,0.186
+MT,Malta,0.028
+MR,Mauritania,0.158
+MU,Mauritius,0.011
+MX,Mexico,0.021
+MD,Moldova,0.007
+MN,Mongolia,0.097
+MA,Morocco,0.017
+MZ,Mozambique,0.05
+MM,Myanmar,0.061
+NA,Namibia,0.038
+NP,Nepal,0.045
+NL,Netherlands,0.006
+NZ,New Zealand,0.022
+NI,Nicaragua,0.041
+NE,Niger,0.067
+NG,Nigeria,0.05
+NO,Norway,0.017
+OM,Oman,0.041
+PK,Pakistan,0.097
+PA,Panama,0.019
+PG,Papua New Guinea,0.086
+PY,Paraguay,0.039
+PE,Peru,0.019
+PH,Philippines,0.044
+PL,Poland,0.025
+PT,Portugal,0.008
+QA,Qatar,0.028
+RO,Romania,0.014
+RU,Russia,0.003
+RW,Rwanda,0.073
+KN,Saint Kitts and Nevis,0.015
+LC,Saint Lucia,0.05
+WS,Samoa,0.097
+ST,Sao Tome and Principe,0.036
+SA,Saudi Arabia,0.028
+SN,Senegal,0.114
+SC,Seychelles,0.026
+SL,Sierra Leone,0.066
+SG,Singapore,0.02
+SK,Slovakia,0.01
+SI,Slovenia,0.004
+SB,Solomon Islands,0.046
+ZA,South Africa,0.039
+ES,Spain,0.022
+LK,Sri Lanka,0.042
+SD,Sudan,0.045
+SR,Suriname,0.025
+SZ,Swaziland,0.022
+SE,Sweden,0.01
+CH,Switzerland,0.01
+SY,Syria,0.02
+TJ,Tajikistan,0.043
+TZ,Tanzania,0.056
+TH,Thailand,0.062
+TG,Togo,0.1
+TO,Tonga,0.053
+TT,Trinidad and Tobago,0.034
+TN,Tunisia,0.024
+TR,Turkey,0.051
+TM,Turkmenistan,0.064
+GB,U.K.,0.009
+US,U.S.,0.011
+UG,Uganda,0.055
+UA,Ukraine,0.004
+AE,United Arab Emirates,0.017
+UY,Uruguay,0.021
+UZ,Uzbekistan,0.061
+VU,Vanuatu,0.16
+VE,Venezuela,0.021
+VN,Viet Nam,0.033
+YE,Yemen,0.052
+ZM,Zambia,0.059
+ZW,Zimbabwe,0.041

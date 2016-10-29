@@ -9,6 +9,7 @@ else {
     return function () {
       // create the globe
       new TWEEN.Tween(globe).to({ time: t / modes.length }, 500).easing(TWEEN.Easing.Cubic.EaseOut).start();
+      
       // get the current mode 
       var mode = document.getElementById('mode_' + modes[t]);
 

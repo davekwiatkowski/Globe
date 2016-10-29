@@ -4,7 +4,6 @@
 @import './section_globe/globe';
 @mixin section_globe{
     section.globe{
-        @include size_full;
         @include globe;
         @include not_globe;
     }

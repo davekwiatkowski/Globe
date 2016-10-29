@@ -337,8 +337,8 @@ DAT.Globe = function (container, opts) {
   function animate() {
     requestAnimationFrame(animate);
     render();
-    target.x = target.x + 0.0007;
-    target.y = target.y + 0.0001;
+    target.x += 0.001;
+    target.y += 0.0001;
   }
 
   function render() {
