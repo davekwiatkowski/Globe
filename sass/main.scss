@@ -10,5 +10,6 @@ body{
         @include section_splash;
         @include section_globe;
         @include section_map;
+        perspective: 1000px;
     }
 }
