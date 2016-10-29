@@ -26,7 +26,7 @@ else {
       // set the activity of the current mode to active  
       mode.setAttribute('class', 'mode active');
 
-      document.getElementById('menu_thing').innerHTML = 'Countries by ' + mode.innerHTML;
+      document.getElementById('menu_thing').innerHTML = mode.innerHTML;
     };
   };
 

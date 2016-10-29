@@ -4,5 +4,13 @@
     background: $white-af;
     border:1px solid $weird-gray;
     font-size: $font-small;
-    color: $microsoft-orange;
+    color: $crazy-black;
+    &:hover{
+        cursor:pointer;
+        background:#f0f0f0;
+    }
+    &:before{
+        content:'Compare by ';
+        color: #aaa;
+    }
 }
