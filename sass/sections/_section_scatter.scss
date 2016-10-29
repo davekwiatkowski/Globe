@@ -1,0 +1,8 @@
+@mixin section_scatter{
+    section.scatter{
+        @include flex_center_column;
+        background-color:#f0f0f0;
+        z-index: 2000;
+        position: absolute;
+    }
+}
