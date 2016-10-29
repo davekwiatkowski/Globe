@@ -4,15 +4,32 @@
         .splash_contents{
             padding:2rem;
             margin: auto;
+            max-width:25em;
             h1{
                 font-size: $font-huge;
+                font-weight:bold;
             }
-            h2{
-                font-size: $font-small;
+            h2, h2 *{
+                font-size: $font-medium;
             }
             h3{
-                font-size: $font-tiny;
+                font-size: $font-small;
+                color:$microsoft-green;
             }
+            .key_word{
+                &.blue{
+                    color:$microsoft-blue;
+                }
+                &.orange{
+                    color:$microsoft-orange;
+                }
+                font-weight: bold;
+            }
+        }
+        @media only screen and (min-width: 500px) {
+            height:100%;
+            padding-top:4rem;
+            padding-bottom:4rem;
         }
         z-index:999;
         position: relative;

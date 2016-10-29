@@ -1,7 +1,6 @@
 @mixin fragment_current_info{
     #current_info{
         @include flex_left_column;
-
         *{
             width: 100%;
             padding:0.25rem;
@@ -11,17 +10,17 @@
         }
         li{
             list-style: none;
-        }
-        :before{
-            content: '-';
-            color:$microsoft-yellow;
-        }
-        :hover{
-            cursor:pointer;
-            background:#f0f0f0;
-        }
-        :hover:before{
-            content: '----';
+            &:before{
+                content: '-';
+                color:$microsoft-yellow;
+            }
+            &:hover{
+                cursor:pointer;
+                background:#f0f0f0;
+            }
+            &:hover:before{
+                content: '----';
+            }
         }
         > *{ 
             font-size: $font-small;

@@ -12,17 +12,19 @@
             @include fragment_menu_button;
         }
 
+        perspective: 1000px;
+
         * li{
-            opacity:0;
+            opacity:0;  
         }
-        &:hover * li, &:active * l,  &:focus * li{
+
+        &:hover * li, &:focus * li{
             @for $i from 1 through 3{
                 &:nth-child(#{$i}){
                     animation: appear 300ms ease-in-out $i * 100ms - 100ms forwards;
                 }
             }
         }
-        perspective: 1000px;
         @keyframes appear{
             0%{
                 opacity: 0;
