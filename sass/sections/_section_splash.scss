@@ -2,6 +2,8 @@
     section.splash{
         @include flex_center_column;
         @include size_full;
+        perspective: 800px;
+        perspective-origin: bottom center; 
         .splash_contents{
             padding:2rem;
             margin: auto;
@@ -26,11 +28,12 @@
                 }
                 font-weight: bold;
             }
+            transform: rotateY(10deg) rotateX(-10deg);
         }
         z-index:0;
-        @media all and (min-width: 960px){
+        @media only screen and (min-width: 960px){
             position: fixed;
-            top:0;
+            top:0;  
         }
         background:#fff;
     }

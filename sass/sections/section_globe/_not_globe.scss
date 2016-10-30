@@ -6,11 +6,14 @@
         height:100%;
         width:20rem;
         top:0;
-        visibility: hidden;
-        -ms-visibility: hidden;
-        -webkit-visibility: hidden;
-        -moz-visibility: hidden;
-        z-index: 444;
+        visibility:hidden;
+        z-index: 9999;
         position:fixed;
+
+        @media only screen and (max-width: 960px) {
+            width:100%;
+            left:0;
+            visibility: visible;
+        }
     }
 }

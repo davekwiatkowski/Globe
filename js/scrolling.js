@@ -13,19 +13,21 @@ jQuery(document).ready(function ($) {
       $("#splash").css({ "top": "initial" });
     }
 
-    if ($(window).scrollTop()  < screen.height * .8) {
-      $("#not_globe").css({ "left": ($(window).scrollTop()) - screen.height + "px" });
-      $("#not_globe").css({ "visibility": "visible" });
-      $("#not_globe").css({ "-ms-visibility": "visible" });
-      $("#not_globe").css({ "-moz-visibility": "visible" });
-      $("#not_globe").css({ "-webkit-visibility": "visible" });
-    } else if ($(window).scrollTop() >= screen.height*2.2) {
-      $("#not_globe").css({ "left": -($(window).scrollTop()) + screen.height*2.2 + "px" });
-      $("#not_globe").css({ "visibility": "visible" });
-      $("#not_globe").css({ "-ms-visibility": "visible" });
-      $("#not_globe").css({ "-moz-visibility": "visible" });
-      $("#not_globe").css({ "-webkit-visibility": "visible" });
+    if ($(window).scrollTop() < screen.height * .8) {
+      if (mq.matches) {
+        $("#not_globe").css({ "left": ($(window).scrollTop()) - screen.height + "px" });
+        $("#not_globe").css({ "visibility": "visible" });
+      }
+      else $("#not_globe").css({ "visibility": "hidden" });
+    } else if ($(window).scrollTop() >= screen.height * 2.2) {
+      if (mq.matches) {
+        $("#not_globe").css({ "left": -($(window).scrollTop()) + screen.height * 2.2 + "px" });
+        $("#not_globe").css({ "visibility": "visible" });
+      }
+      else $("#not_globe").css({ "visibility": "hidden" });
     } else {
+      if (!mq.matches)
+        $("#not_globe").css({ "visibility": "visible" });
       $("#not_globe").css({ "left": "initial" });
     }
   });
