@@ -245,7 +245,7 @@ function changeDataScatter() {
             }
         },
         colors: ['#00a1f1', '#7cbb00', '#f65314'],
-        backgroundColor: '#f0f0f0',
+        backgroundColor: '#fff',
         tooltip: {
             textStyle: {
                 color: '#333',
@@ -259,7 +259,7 @@ function changeDataScatter() {
 }
 
 function drawScatterMap() {
-    var chart = new google.visualization.ScatterChart(document.getElementById('scatter'));
+    var chart = new google.visualization.ScatterChart(document.getElementById('scatter_things'));
     chart.draw(dataScatter, optionsScatter);
 }
 

@@ -5,6 +5,7 @@
 @import 'sections/section_globe';
 @import 'sections/section_map';
 @import 'sections/section_scatter';
+@import 'sections/section_conclusion';
 @import './sections/section';
 body{
     div.main_content{
@@ -12,5 +13,6 @@ body{
         @include section_globe;
         @include section_map;
         @include section_scatter;
+        @include section_conclusion;
     }
 }

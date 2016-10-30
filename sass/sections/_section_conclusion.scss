@@ -1,5 +1,5 @@
-@mixin section_scatter{
-    section.scatter{
+@mixin section_conclusion{
+    section.conclusion{
         @include flex_center_column;
         /* IE10+ */ 
         background-image: -ms-linear-gradient(top, #000000 0%, #909090 100%);
@@ -17,28 +17,38 @@
         background-image: -webkit-linear-gradient(top, #000000 0%, #909090 100%);
 
         /* W3C Markup */ 
-        background-image: linear-gradient(to bottom, #000000 0%, #909090 100%);
-        z-index: 2000;
+        background-image: linear-gradient(to bottom, #909090, #f0f0f0 100%);
+        top:400vh;
+        z-index: 3000;
         position: absolute;
-        div.scatter_things{
-            z-index:2500;
-            height: 60%;
+        div.conclusion_things{
             margin:auto;
             background:#fff;
             box-shadow: 0px 6px 9px #aaa;
             padding:2rem;
-            transform: rotate(3deg);
-            max-width:800px;
-            width:calc(100% - 6rem);
-            &:hover{
-                animation: turnabit1 500ms cubic-bezier(0, 0.1, 0.8, 4) forwards;
+            transform: rotate(-2deg);
+            max-width:calc(100% - 6rem);
+            h1{
+                font-size: $font-medium;
             }
-            @keyframes turnabit1{
+            p{
+                max-width: 25em;
+            }
+            &:hover{
+                animation: turnabit 500ms cubic-bezier(0, 0.1, 0.8, 4) forwards;
+            }
+            a{
+                color:$microsoft-blue;
+                &:hover{
+                    font-weight: bold;
+                }
+            }
+            @keyframes turnabit{
                 0%{
-                    transform: rotate(3deg);
+                    transform: rotate(-2deg);
                 }
                 50%{
-                    transform: rotate(-1deg);
+                    transform: rotate(1deg);
                 }
                 100%{
                     transform: rotate(0deg);
