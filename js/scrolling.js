@@ -13,10 +13,10 @@ jQuery(document).ready(function ($) {
       $("#splash").css({ "top": "initial" });
     }
 
-    if (mq.matches && $(window).scrollTop()  < screen.height * .8) {
-      $("#not_globe").css({ "left": ($(window).scrollTop()) - screen.height *.8 + "px" });
+    if ($(window).scrollTop()  < screen.height * .8) {
+      $("#not_globe").css({ "left": ($(window).scrollTop()) - screen.height + "px" });
       $("#not_globe").css({ "visibility": "visible" });
-    } else if (mq.matches && $(window).scrollTop() >= screen.height*2.2) {
+    } else if ($(window).scrollTop() >= screen.height*2.2) {
       $("#not_globe").css({ "left": -($(window).scrollTop()) + screen.height*2.2 + "px" });
       $("#not_globe").css({ "visibility": "visible" });
     } else {

@@ -9,11 +9,5 @@
         visibility:hidden;
         z-index: 444;
         position:fixed;
-
-        @media only screen and (max-width: 960px) {
-            width:100%;
-            left:0;
-            visibility: visible;
-        }
     }
 }
