@@ -6,7 +6,10 @@
         height:100%;
         width:20rem;
         top:0;
-        visibility:hidden;
+        visibility: hidden;
+        -ms-visibility: hidden;
+        -webkit-visibility: hidden;
+        -moz-visibility: hidden;
         z-index: 444;
         position:fixed;
     }
