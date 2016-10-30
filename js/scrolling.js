@@ -12,25 +12,18 @@ jQuery(document).ready(function ($) {
     } else {
       $("#splash").css({ "top": "initial" });
     }
-
-    if ($(window).scrollTop() < screen.height) {
-      if (mq.matches) {
+    if (mq.matches) {
+      if ($(window).scrollTop() < screen.height) {
         $("#not_globe").css({ "left": ($(window).scrollTop()) - screen.height + "px" });
         $("#not_globe").css({ "visibility": "visible" });
       }
-      else $("#not_globe").css({ "visibility": "hidden" });
-    }
-    else if ($(window).scrollTop() < screen.height * 2.6) {
-      if (!mq.matches) $("#not_globe").css({ "visibility": "visible" });
-      $("#not_globe").css({ "left": "initial" });
-    }
-    else {
-      if (mq.matches) {
+      else if ($(window).scrollTop() < screen.height * 2.6) {
+        $("#not_globe").css({ "left": "initial" });
+      }
+      else {
         $("#not_globe").css({ "left": -($(window).scrollTop()) + screen.height * 2.6 + "px" });
         $("#not_globe").css({ "visibility": "visible" });
       }
-      else $("#not_globe").css({ "visibility": "hidden" });
     }
-
   });
 });
