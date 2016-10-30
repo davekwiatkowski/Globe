@@ -3,7 +3,7 @@ globe.davekwiatkowski.com | Capital One Global Data Visualization
 ### What I built
 * I created an interactive web application to analyze the relationship between web usage and life satisfaction
 * I also enabled the user to evaluate 3 different data sets to see how they compare to one another
-* The user can use the [WebGL Globe](https://www.chromeexperiments.com/globe) in my application to get a bigger picture of how areas in the world line up to each other in my these 3 different data sets
+* The user can use the [WebGL Globe](https://www.chromeexperiments.com/globe) in my application to get a bigger picture of how areas in the world line up to each other in my these 3 different data sets from multiple sources
 * I also took this project as an opportunity to practice my web development skills and make my own discoveries - relating to the product and the process
 
 ### What I used
