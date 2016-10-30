@@ -13,15 +13,15 @@ jQuery(document).ready(function ($) {
       $("#splash").css({ "top": "initial" });
     }
 
-    if ($(window).scrollTop() < screen.height * .8) {
+    if ($(window).scrollTop() < screen.height) {
       if (mq.matches) {
         $("#not_globe").css({ "left": ($(window).scrollTop()) - screen.height + "px" });
         $("#not_globe").css({ "visibility": "visible" });
       }
       else $("#not_globe").css({ "visibility": "hidden" });
-    } else if ($(window).scrollTop() >= screen.height * 2.2) {
+    } else if ($(window).scrollTop() >= screen.height * 3) {
       if (mq.matches) {
-        $("#not_globe").css({ "left": -($(window).scrollTop()) + screen.height * 2.2 + "px" });
+        $("#not_globe").css({ "left": -($(window).scrollTop()) + screen.height * 3 + "px" });
         $("#not_globe").css({ "visibility": "visible" });
       }
       else $("#not_globe").css({ "visibility": "hidden" });
