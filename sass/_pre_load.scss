@@ -1,0 +1,19 @@
+@mixin pre_load{
+    #pre_load{
+        @include flex_center_column;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        bottom:0;
+        right:0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 99999;
+        background:#f0f0f0;
+        margin:auto;
+        svg{
+            margin: auto;
+            width:10em;
+        }
+    }
+}

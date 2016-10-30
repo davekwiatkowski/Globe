@@ -41,72 +41,94 @@
 	<script type="text/javascript" src="http://leunen.me/fakesmile/smil.user.js"></script>
 	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
 	<script src="js/scrolling.js"></script>
+	<script src="js/loading.js"></script>
 </head>
 
 <body>
-	<div class="main_content">
-		<article>
-			<!-- splash -->
-			<section id="splash" class="splash">
-				<div class="splash_contents">
-					<h1>Web & =)</h1>
-					<h3>a webuser and happiness comparison</h3>
-					<h2>An interactive comparison between <span class="key_word blue">web users</span> and <span class="key_word orange">satisfaction of life </span>around
-						the world.</h2>
-				</div>
-			</section>
+	<div id="pre_load" style="overflow:hidden">
 
-			<!-- scrolling -->
-			<div class='scrolling_stuff'>
-				<!-- globe -->
-				<section id="globe" class="globe">
-					<div id="globe_container"></div>
-					<div id="not_globe">
-						<div id="selection">
-							<h1 id="menu_thing">% Web Users</h1>
-							<ul id="current_info">
-								<li id="mode_users" data="mode_users" class="mode">% Web Users
-								</li>
-								<li id="mode_user_delta" class="mode">% Web User Delta (1 year)</li>
-								<li id="mode_swl" class="mode">Life Satisfaction Index</li>
-							</ul>
+			<svg version="1.1" id="L5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				viewBox="0 0 60 40" enable-background="new 0 0 0 0" xml:space="preserve">
+				<circle fill="#00a1f1" stroke="none" cx="5" cy="20" r="5">
+					<animateTransform attributeName="transform" dur="1.2s" type="translate" values="0 15 ; 0 -15; 0 15" repeatCount="indefinite"
+						begin="0.1" />
+				</circle>
+				<circle fill="#7cbb00" stroke="none" cx="30" cy="20" r="5">
+					<animateTransform attributeName="transform" dur="1.1s" type="translate" values="0 10 ; 0 -10; 0 10" repeatCount="indefinite"
+						begin="0.1" />
+				</circle>
+				<circle fill="#f65314" stroke="none" cx="55" cy="20" r="5">
+					<animateTransform attributeName="transform" dur="1.0s" type="translate" values="0 5 ; 0 -5; 0 5" repeatCount="indefinite"
+						begin="0.1" />
+				</circle>
+			</svg>
+	</div>
+	<div id="post_load" style="display:none" style="visibility:hidden">
+
+		<div class="main_content">
+			<article>
+				<!-- splash -->
+				<section id="splash" class="splash">
+					<div class="splash_contents">
+						<h1>Web & =)</h1>
+						<h3>internet and happiness</h3>
+						<h2>An interactive comparison between <span class="key_word blue">web users</span> and <span class="key_word orange">satisfaction of life </span>around
+							the world.</h2>
+					</div>
+				</section>
+
+				<!-- scrolling -->
+				<div class='scrolling_stuff'>
+					<!-- globe -->
+					<section id="globe" class="globe">
+						<div id="globe_container"></div>
+						<div id="not_globe">
+							<div id="selection">
+								<h1 id="menu_thing">% Web Users</h1>
+								<ul id="current_info">
+									<li id="mode_users" data="mode_users" class="mode">% Web Users
+									</li>
+									<li id="mode_user_delta" class="mode">% Web User Delta (1 year)</li>
+									<li id="mode_swl" class="mode">Life Satisfaction Index</li>
+								</ul>
+							</div>
 						</div>
-					</div>
 
-					<!-- globe scripts -->
-					<script type="text/javascript" src="third-party/Three/Detector.js"></script>
-					<script type="text/javascript" src="third-party/Three/three.min.js"></script>
-					<script type="text/javascript" src="third-party/Three/Tween.js"></script>
-					<script type="text/javascript" src="js/globe.js"></script>
-					<script type="text/javascript" src="js/globe_setup.js"></script>
-				</section>
+						<!-- globe scripts -->
+						<script type="text/javascript" src="third-party/Three/Detector.js"></script>
+						<script type="text/javascript" src="third-party/Three/three.min.js"></script>
+						<script type="text/javascript" src="third-party/Three/Tween.js"></script>
+						<script type="text/javascript" src="js/globe.js"></script>
+						<script type="text/javascript" src="js/globe_setup.js"></script>
+					</section>
 
-				<!-- map -->
-				<section id="map" class="map">
-					<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-					<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-					<script type="text/javascript" src="js/map.js"></script>
-				</section>
+					<!-- map -->
+					<section id="map" class="map">
+						<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+						<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+						<script type="text/javascript" src="js/map.js"></script>
+					</section>
 
-				<!-- scatter -->
-				<section id="scatter" class="scatter">
-					<div id="scatter_things" class="scatter_things"></div>
-				</section>
+					<!-- scatter -->
+					<section id="scatter" class="scatter">
+						<div id="scatter_things" class="scatter_things"></div>
+					</section>
 
-				<!-- conclusion -->
-				<section id="conclusion" class="conclusion">
-					<div class="conclusion_things">
-						<h1>It appears that</h1>
-						<p>
-							the internet tends to positively impact the lives around the world.
-						</p>
-						<p>- by
-							<a href="http://davekwiatkowski.com">dave kwiatkowski</a> oct. 2016
-						</p>
-					</div>
-				</section>
-			</div>
-		</article>
+					<!-- conclusion -->
+					<section id="conclusion" class="conclusion">
+						<div class="conclusion_things">
+							<h1>It appears that</h1>
+							<p>
+								the internet tends to positively impact the lives around the world.
+							</p>
+							<p>- by
+								<a href="http://davekwiatkowski.com">dave kwiatkowski</a> oct. 2016
+							</p>
+						</div>
+					</section>
+				</div>
+			</article>
+		</div>
 	</div>
 </body>
 

@@ -7,7 +7,9 @@
 @import 'sections/section_scatter';
 @import 'sections/section_conclusion';
 @import './sections/section';
+@import 'pre_load';
 body{
+    @include pre_load;
     div.main_content{
         @include section_splash;
         div.scrolling_stuff{
