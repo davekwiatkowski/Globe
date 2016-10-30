@@ -10,9 +10,15 @@
 body{
     div.main_content{
         @include section_splash;
-        @include section_globe;
-        @include section_map;
-        @include section_scatter;
-        @include section_conclusion;
+        div.scrolling_stuff{
+            z-index:500;
+            top:100vh;
+            position: absolute;
+            width:100%;
+            @include section_globe;
+            @include section_map;
+            @include section_scatter;
+            @include section_conclusion;
+        }
     }
 }

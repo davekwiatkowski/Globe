@@ -27,8 +27,11 @@
                 font-weight: bold;
             }
         }
-        z-index:999;
-        position: relative;
+        z-index:0;
+        @media all and (min-width: 960px){
+            position: fixed;
+            top:0;
+        }
         background:#fff;
     }
 }

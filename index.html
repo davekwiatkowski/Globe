@@ -36,6 +36,11 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 	<link rel="manifest" href="/favicons/manifest.json">
+
+	<!-- scripts -->
+	<script type="text/javascript" src="http://leunen.me/fakesmile/smil.user.js"></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+	<script src="js/scrolling.js"></script>
 </head>
 
 <body>
@@ -45,58 +50,62 @@
 			<section id="splash" class="splash">
 				<div class="splash_contents">
 					<h1>Web & =)</h1>
-					<h3>dave kwiatkowski - oct.16</h3>
+					<h3>a webuser and happiness comparison</h3>
 					<h2>An interactive comparison between <span class="key_word blue">web users</span> and <span class="key_word orange">satisfaction of life </span>around
 						the world.</h2>
 				</div>
 			</section>
 
-			<!-- globe -->
-			<section id="globe" class="globe">
-				<div id="globe_container"></div>
-				<div id="not_globe">
-					<div id="selection">
-						<h1 id="menu_thing">% Web Users</h1>
-						<ul id="current_info">
-							<li id="mode_users" data="mode_users" class="mode">% Web Users</li>
-							<li id="mode_user_delta" class="mode">% Web User Delta (1 year)</li>
-							<li id="mode_swl" class="mode">Life Satisfaction Index</li>
-						</ul>
+			<!-- scrolling -->
+			<div class='scrolling_stuff'>
+				<!-- globe -->
+				<section id="globe" class="globe">
+					<div id="globe_container"></div>
+					<div id="not_globe">
+						<div id="selection">
+							<h1 id="menu_thing">% Web Users</h1>
+							<ul id="current_info">
+								<li id="mode_users" data="mode_users" class="mode">% Web Users</a>
+								</li>
+								<li id="mode_user_delta" class="mode">% Web User Delta (1 year)</li>
+								<li id="mode_swl" class="mode">Life Satisfaction Index</li>
+							</ul>
+						</div>
 					</div>
-				</div>
 
-				<!-- globe scripts -->
-				<script type="text/javascript" src="third-party/Three/Detector.js"></script>
-				<script type="text/javascript" src="third-party/Three/three.min.js"></script>
-				<script type="text/javascript" src="third-party/Three/Tween.js"></script>
-				<script type="text/javascript" src="js/globe.js"></script>
-				<script type="text/javascript" src="js/globe_setup.js"></script>
-			</section>
+					<!-- globe scripts -->
+					<script type="text/javascript" src="third-party/Three/Detector.js"></script>
+					<script type="text/javascript" src="third-party/Three/three.min.js"></script>
+					<script type="text/javascript" src="third-party/Three/Tween.js"></script>
+					<script type="text/javascript" src="js/globe.js"></script>
+					<script type="text/javascript" src="js/globe_setup.js"></script>
+				</section>
 
-			<!-- map -->
-			<section id="map" class="map">
-				<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-				<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-				<script type="text/javascript" src="js/map.js"></script>
-			</section>
+				<!-- map -->
+				<section id="map" class="map">
+					<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+					<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+					<script type="text/javascript" src="js/map.js"></script>
+				</section>
 
-			<!-- scatter -->
-			<section id="scatter" class="scatter">
-				<div id="scatter_things" class="scatter_things"></div>
-			</section>
+				<!-- scatter -->
+				<section id="scatter" class="scatter">
+					<div id="scatter_things" class="scatter_things"></div>
+				</section>
 
-			<!-- conclusion -->
-			<section id="conclusion" class="conclusion">
-				<div class="conclusion_things">
-					<h1>It appears that</h1>
-					<p>
-						the internet tends to positively impact the lives around the world.
-					</p>
-					<p>- by
-						<a href="http://davekwiatkowski.com">dave kwiatkowski</a> oct. 2016
-					</p>
-				</div>
-			</section>
+				<!-- conclusion -->
+				<section id="conclusion" class="conclusion">
+					<div class="conclusion_things">
+						<h1>It appears that</h1>
+						<p>
+							the internet tends to positively impact the lives around the world.
+						</p>
+						<p>- by
+							<a href="http://davekwiatkowski.com">dave kwiatkowski</a> oct. 2016
+						</p>
+					</div>
+				</section>
+			</div>
 		</article>
 	</div>
 </body>
