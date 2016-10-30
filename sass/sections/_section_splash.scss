@@ -28,7 +28,7 @@
                 }
                 font-weight: bold;
             }
-            &:hover{
+            &:hover, &:focus, &:active{
                 animation: perspect 500ms ease-in-out forwards;
             }
             
