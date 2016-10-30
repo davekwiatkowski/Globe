@@ -3,11 +3,10 @@
 @mixin not_globe{
     div#not_globe{
         @include fragment_selection;
-        height:100%;
         width:20rem;
         top:0;
         visibility:hidden;
-        z-index: 9999;
+        z-index: 999;
         position:fixed;
 
         @media only screen and (max-width: 960px) {

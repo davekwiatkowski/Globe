@@ -33,12 +33,12 @@
             p{
                 max-width: 25em;
             }
-            &:hover{
+             &:hover, &:active, &:focus{
                 animation: turnabit 500ms cubic-bezier(0, 0.1, 0.8, 4) forwards;
             }
             a{
                 color:$microsoft-blue;
-                &:hover{
+                 &:hover, &:active, &:focus{
                     font-weight: bold;
                 }
             }
