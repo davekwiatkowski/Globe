@@ -14,3 +14,7 @@
 * In addition to the [WebGL Globe API](https://www.chromeexperiments.com/globe), I used the [Google Charts API](https://developers.google.com/chart/) for a diverse set of data visualization
 * I used SCSS for CSS preprocessing in order to modularize and speed up the project
 * I used gulp.js as well for an efficient build process
+
+### Data Sources
+* [Satisfaction of Life Index](https://en.wikipedia.org/wiki/Satisfaction_with_Life_Index)
+* [Internet Usage](http://www.internetlivestats.com/internet-users-by-country/)
