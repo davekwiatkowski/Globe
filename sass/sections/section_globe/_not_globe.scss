@@ -9,7 +9,12 @@
         z-index: 999;
         position:fixed;
 
-        @media only screen and (max-width: 960px) {
+        @media only screen and (max-width: 960px) and (min-width: 600px){
+            left:0;
+            visibility: visible;
+        }
+
+        @media only screen and (max-width: 599px){
             width:100%;
             left:0;
             visibility: visible;
