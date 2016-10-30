@@ -20,13 +20,13 @@ jQuery(document).ready(function ($) {
       }
       else $("#not_globe").css({ "visibility": "hidden" });
     } 
-    else if ($(window).scrollTop() < screen.height * 3){
+    else if ($(window).scrollTop() < screen.height * 2.6){
       if (!mq.matches) $("#not_globe").css({ "visibility": "visible" });
       $("#not_globe").css({ "left": "initial" });
     }
     else {
       if (mq.matches) {
-        $("#not_globe").css({ "left": -($(window).scrollTop()) + screen.height * 3 + "px" });
+        $("#not_globe").css({ "left": -($(window).scrollTop()) + screen.height * 2.6 + "px" });
         $("#not_globe").css({ "visibility": "visible" });
       }
       else $("#not_globe").css({ "visibility": "hidden" });
