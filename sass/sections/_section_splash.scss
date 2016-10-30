@@ -28,7 +28,19 @@
                 }
                 font-weight: bold;
             }
+            &:hover{
+                animation: perspect 500ms ease-in-out forwards;
+            }
+            
             transform: rotateY(10deg) rotateX(-10deg);
+            @keyframes perspect{
+                0%{
+                    transform: rotateY(10deg) rotateX(-10deg);
+                }
+                100%{
+                    transform: rotateY(0deg) rotateX(-10deg);
+                }
+            }
         }
         z-index:0;
         @media only screen and (min-width: 960px){
