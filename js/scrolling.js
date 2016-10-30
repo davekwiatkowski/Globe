@@ -19,8 +19,8 @@ jQuery(document).ready(function ($) {
         $("#not_globe").css({ "visibility": "visible" });
       }
       else $("#not_globe").css({ "visibility": "hidden" });
-    } 
-    else if ($(window).scrollTop() < screen.height * 2.6){
+    }
+    else if ($(window).scrollTop() < screen.height * 2.6) {
       if (!mq.matches) $("#not_globe").css({ "visibility": "visible" });
       $("#not_globe").css({ "left": "initial" });
     }
@@ -30,6 +30,7 @@ jQuery(document).ready(function ($) {
         $("#not_globe").css({ "visibility": "visible" });
       }
       else $("#not_globe").css({ "visibility": "hidden" });
-    } 
+    }
+
   });
 });
