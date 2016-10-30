@@ -780,8 +780,6 @@ function changeDataRegions() {
     var modeToUse = document.getElementsByClassName('mode active');
     var modeID = modeToUse.length == 0 ? modes[2].id : modeToUse[0].id;
 
-    console.log(modeID + ", " + "mode_" + modes[0]);
-
     if (modeID == "mode_" + modes[0]) dataRegions = data1;
     else if (modeID == "mode_" + modes[1]) dataRegions = data2;
     else dataRegions = data3;
