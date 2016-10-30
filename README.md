@@ -18,3 +18,4 @@
 ### Data Sources
 * [Satisfaction of Life Index](https://en.wikipedia.org/wiki/Satisfaction_with_Life_Index)
 * [Internet Usage](http://www.internetlivestats.com/internet-users-by-country/)
+* [Country Geolocations](https://developers.google.com/public-data/docs/canonical/countries_csv)
