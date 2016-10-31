@@ -1,5 +1,5 @@
 # Web & =) 
-[globe.davekwiatkowski.com](globe.davekwiatkowski.com) | Capital One Global Data Visualization 
+[globe.davekwiatkowski.com](http://globe.davekwiatkowski.com) | Capital One Global Data Visualization 
 ### What I built
 * I created an interactive web application to analyze the relationship between web usage and life satisfaction
 * I also enabled the user to evaluate 3 different data sets to see how they compare to one another
